@@ -22,6 +22,21 @@ class MainActivity : AppCompatActivity() {
         Log.i(TAG, "Application onResume")
     }
 
+    override fun onPause() {
+        super.onPause()
+        Log.i(TAG, "Application onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i(TAG, "Application onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i(TAG, "Application onDestroy")
+    }
+
 }
 
 fun logging() {
